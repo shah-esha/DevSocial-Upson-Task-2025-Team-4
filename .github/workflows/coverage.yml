@@ -32,7 +32,7 @@ jobs:
       - name: Reveal secret codeword here
         if: success()
         env:
-          SCAVENGER_CODEWORD: "VINEYARD"
+          SCAVENGER_CODEWORD: ${{ vars.SCAVENGER_CODEWORD }}
         run: |
           echo "COVERAGE GOAL REACHED!"
           echo "------------------------------"
